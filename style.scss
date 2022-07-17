@@ -6,6 +6,8 @@
 body {
   overflow-x: hidden;
 }
+
+
 h1,
 h2,
 h3,
@@ -17,9 +19,11 @@ a,
 button {
   font-family: "Raleway", sans-serif !important;
 }
-p, span, li {
+p,
+span,
+li {
   line-height: 1.4;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
 }
 h2 {
   font-size: 48px;
@@ -83,7 +87,7 @@ h2 {
         }
         .herobtn2 {
           a {
-            background-color: #457b9d;
+            background-color: #B9314F;
           }
         }
       }
@@ -136,6 +140,17 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
   }
+  h3 {
+    width: fit-content;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    background-color: #B9314F;
+    padding: 10px;
+  }
+
   .details-flex {
     display: flex;
     flex-flow: column;
@@ -144,7 +159,6 @@ h2 {
     max-width: 1300px;
     padding-left: 4vw;
     padding-right: 4vw;
-    column-gap: 100px;
     margin-left: auto !important;
     margin-right: auto !important;
     /*
@@ -163,36 +177,44 @@ h2 {
       background-color: #264653;
       */
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-      padding: 30px;
+      padding: 5vw 10vw;
       margin-top: 30px;
       hr {
         margin: 40px;
       }
       .stats-flex {
-        
         width: 100%;
         ul {
           display: flex;
           flex-flow: row wrap;
           justify-content: center;
-        li {
-          text-align: center;
-          list-style-type: none;
-          flex: 1 30%;
-          margin: 15px 0;
-          display: flex;
-          flex-flow: column;
-          justify-content: center;
-          align-items: center;
-          font-weight: 600;
-          .prefix {
-            color: #264653;
-            font-size: 22px;;
-            font-weight: 800;
-            margin-bottom: 5px;
+          li {
+            flex: 1 25%;
+            margin: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            font-weight: 500;
+            list-style-type: decimal;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: -15px;
+              top: 0;
+              width: 1.5px;
+              height: 100%;
+              background-color: #B9314F;
+            }
+
+            .prefix {
+              color: #264653;
+              font-size: 22px;
+              font-weight: 800;
+              margin-bottom: 5px;
+            }
           }
         }
-      }
       }
       /*
       ul {
@@ -215,17 +237,17 @@ h2 {
           padding: 20px;
           
           */
-          .svg-container {
-            background-color: #264653;
-            width: 65px;
-            margin-bottom: 10px;
-            margin-right: 0 !important;
-            height: 65px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-          }
+      .svg-container {
+        background-color: #264653;
+        width: 65px;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
       img {
         width: 38px;
         height: 38px;
@@ -345,6 +367,10 @@ footer {
     a {
       margin-left: 20px;
       margin-right: 20px;
+      text-decoration: none;
+      color: #264653;
+      font-size: 18px;
+      font-weight: 700;
     }
   }
 }
