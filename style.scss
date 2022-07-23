@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
-
 
 h1,
 h2,
@@ -44,7 +46,7 @@ h2 {
   width: 100%;
   height: 600px;
   max-height: 600px;
-  background: url(img/IMG_2697.jpg);
+  background: url(img/heroimg.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -87,7 +89,7 @@ h2 {
         }
         .herobtn2 {
           a {
-            background-color: #B9314F;
+            background-color: #b9314f;
           }
         }
       }
@@ -127,7 +129,7 @@ h2 {
       width: 17vw;
       max-width: 250px !important;
       margin: 5px;
-      border-radius: 5px;
+      border-radius: 8px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     }
   }
@@ -147,7 +149,7 @@ h2 {
     font-size: 36px;
     color: #fff;
     margin-bottom: 30px;
-    background-color: #B9314F;
+    background-color: #b9314f;
     padding: 10px;
   }
 
@@ -157,8 +159,6 @@ h2 {
     justify-content: center;
     width: 100%;
     max-width: 1300px;
-    padding-left: 4vw;
-    padding-right: 4vw;
     margin-left: auto !important;
     margin-right: auto !important;
     /*
@@ -176,9 +176,11 @@ h2 {
       /*
       background-color: #264653;
       */
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-      padding: 5vw 10vw;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 60px;
       margin-top: 30px;
+      background-color: #fff;
       hr {
         margin: 40px;
       }
@@ -187,9 +189,10 @@ h2 {
         ul {
           display: flex;
           flex-flow: row wrap;
-          justify-content: center;
+          justify-content: space-between;
           li {
             flex: 1 25%;
+            max-width: 25%;
             margin: 15px;
             display: flex;
             flex-flow: column;
@@ -204,7 +207,7 @@ h2 {
               top: 0;
               width: 1.5px;
               height: 100%;
-              background-color: #B9314F;
+              background-color: #b9314f;
             }
 
             .prefix {
@@ -288,6 +291,7 @@ h2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    border-radius: 12px;
     .iconflex {
       display: flex;
       flex-flow: column;
@@ -381,4 +385,66 @@ footer {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+.gallery {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .gallery-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    max-width: 94%;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .gallery-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    img {
+      flex: 1 30%;
+      max-width: 30%;
+      margin: 10px;
+      box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+}
+
+#house,
+#views,
+#wildlife {
+  scroll-margin-top: 240px;
+}
+.gallery-tab {
+  display: none;
+}
+
+.gallery-tab.active {
+  display: block;
+}
+
+.gallery-nav-tab {
+  display: inline-block;
+  padding: 10px;
+  color: #264653;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gallery-nav-tab.active {
+  color: #fff;
+  background-color: #b9314f;
 }

@@ -33,11 +33,11 @@
           <h1>Rare Opportunity</h1>
           <p>
             First time on the market since 1968!  Mountaintop farm with stunning views of Laurel Ridge,
-plenty of privacy on a private, gated road!  Ready to create your family retreat?   
+plenty of privacy on a private, gated road! 
           </p>
           <div class="herobtns">
             <div class="herobtn"><a href="#details">Details</a></div>
-            <div class="herobtn herobtn2"><a href="#details">Contact</a></div>
+            <div class="herobtn herobtn2"><a href="#contact">Contact</a></div>
           </div>
         </div>
       </div>
@@ -64,17 +64,14 @@ plenty of privacy on a private, gated road!  Ready to create your family retreat
         <img src="img/trees.jpg" />
       </div>
     </div>
-    <div class="details">
+    <div class="details" id="details">
       <h2>Facts & Features</h2>
-      <div class="details-flex">
+      <div class="details-flex mw-content">
         <div class="details-text">
           <p>
-            Located on a private, gated road at the top of a mountain, the
-            property consists of <span class="text-blue">114.49 acres</span>,
-            with <span class="text-blue">35.56 tillable acres</span> leased
-            annually to a local farm. The structure, in need of some TLC, is a
-            typical PA farm house built in the early 1900's and being sold "as
-            is", it has 5 bedrooms with one on the first floor, 1 bathroom, and
+            This farm is located on a private, gated road at the top of a mountain, with beautiful views of Laurel Ridge. The structure, in need of some TLC, is a
+            typical PA farm house built in the early 1900's. It is being sold "as
+            is". It has 5 bedrooms with one on the first floor, 1 bathroom, and
             a large kitchen, two sources of water, one from a well and/or a
             gravity fed spring.
           </p>
@@ -94,7 +91,9 @@ plenty of privacy on a private, gated road!  Ready to create your family retreat
             <li><span class="prefix">Zoning:</span>Unzoned</li>
             <li><span class="prefix">Flood Zone:</span>X</li>
             <li><span class="prefix">Flood Map</span>#421184 0003 A / May 23, 1980</li>
+            <!--
             <li><span class="prefix">SMSA:</span>#9999</li>
+            -->
             <li><span class="prefix">Census Tract #:</span>9910.00</li>
             <li><span class="prefix">Heating:</span>Propane</li>
             <li><span class="prefix">Cooling:</span>Single AC Window Unit</li>
@@ -112,11 +111,22 @@ plenty of privacy on a private, gated road!  Ready to create your family retreat
               <li><span class="prefix">Appliances:</span>Appliances: Range, Refrigerator, Washer, Dryer, Microwave
               </li>
             </ul>
+            <hr>
+            <h3>Mechanical Details</h3>
+            <ul>
+              <li><span class="prefix">Water:</span>Well on property installed in 2000. There is also a gravity fed spring on property</li>
+              <li><span class="prefix">Sewage:</span>Septic system</li>
+              <li><span class="prefix">Plumbing:</span>Propane water heater</li>
+              <li><span class="prefix">Heating System:</span>Two zones, first floor only
+                Propane in-floor units</li>
+              <li><span class="prefix">Electric:</span>100 amp
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="contact-flex">
         <div>
           <h2>
@@ -139,6 +149,54 @@ plenty of privacy on a private, gated road!  Ready to create your family retreat
         </div>
       </div>
     </div>
+<div class="gallery mw-content">
+  <div class="gallery-nav">
+    <a href="#house" data-tab="house" class="gallery-nav-tab active">
+      House
+    </a>
+    <a href="#views" data-tab="views" class="gallery-nav-tab">
+      Views
+    </a>
+    <!--
+    <a href="#wildlife" data-tab="wildlife" class="gallery-nav-tab">
+      Wildlife
+    </a>
+  -->
+    </div>
+    <div id="house" class="gallery-tab active">
+      <div class="gallery-flex">
+        <img src="img/farm5.jpg" alt="">
+        <img src="img/house1.jpg" alt="">
+        <img src="img/house2.jpg" alt="">
+        
+      </div>
+    </div>
+    <div id="views" class="gallery-tab">
+      <div class="gallery-flex">
+        <img src="img/views9.jpg" alt="">
+        <img src="img/views10.jpg" alt="">
+        <img src="img/nature.jpg" alt="">
+        <img src="img/views1.jpg" alt="">
+        <img src="img/views2.jpg" alt="">
+        <img src="img/views3.jpg" alt="">
+        <img src="img/views4.jpg" alt="">
+        <img src="img/views5.jpg" alt="">
+      </div>
+    </div>
+    <!--
+    <div id="wildlife" class="gallery-tab">
+      <div class="gallery-flex">
+        <img src="img/bear.jpg" alt="">
+        <img src="img/wildlife4.jpg" alt="">
+        <img src="img/wildlife2.jpg" alt="">
+        <img src="img/wildlife4.jpg" alt="">
+        <img src="img/wildlife6.jpg" alt="">
+        <img src="img/wildlife4.jpg" alt="">
+      </div>
+    </div>
+  -->
+    </div>
+    
     <footer>
       <div class="footer-flex mw-content">
         <a href="/">Home</a>
@@ -147,5 +205,7 @@ plenty of privacy on a private, gated road!  Ready to create your family retreat
         <a href="#">Contact</a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
+
