@@ -53,7 +53,7 @@ h2 {
   width: 100%;
   height: 600px;
   max-height: 600px;
-  background: url(img/heroimg.jpg);
+  background: url(img/heroimg-min.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -91,7 +91,7 @@ h2 {
 }
 
 .hero .herocontent .hc-left p {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .hero .herocontent .hc-left .herobtns {
@@ -115,10 +115,22 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .herocontent .hc-left .herobtns .herobtn a:hover {
+  background-color: #0f2d39;
 }
 
 .hero .herocontent .hc-left .herobtns .herobtn2 a {
   background-color: #b9314f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .herocontent .hc-left .herobtns .herobtn2 a:hover {
+  background-color: #920b28;
 }
 
 .hero .herogradient {
@@ -130,6 +142,7 @@ h2 {
 }
 
 .lr-content {
+  display: none !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +193,7 @@ h2 {
 .details {
   background-color: #f5f5f5;
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .details h2 {
@@ -223,8 +237,11 @@ h2 {
 }
 
 .details .details-flex .details-text p {
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .details .details-flex .details-stats {
@@ -364,6 +381,9 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: 1300px;
   padding-left: 4vw;
@@ -376,7 +396,18 @@ h2 {
 }
 
 .contact h2 {
-  font-size: 30px;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact .contact-smalltext {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .contact .contact-links {
@@ -509,6 +540,12 @@ nav .nav-flex a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav .nav-flex a:hover {
+  color: #b9314f;
 }
 
 footer {
@@ -532,6 +569,12 @@ footer .footer-flex a {
   color: #264653;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-flex a:hover {
+  color: #b9314f;
 }
 
 @media screen and (min-width: 1920px) {
@@ -539,6 +582,32 @@ footer .footer-flex a {
   .contact-inner {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+}
+
+@-webkit-keyframes showImg {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes showImg {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 
@@ -577,6 +646,8 @@ footer .footer-flex a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: showImg 1s ease-in-out both;
+          animation: showImg 1s ease-in-out both;
 }
 
 .gallery .gallery-flex img {
@@ -585,6 +656,8 @@ footer .footer-flex a {
           flex: 1 30%;
   max-width: 30%;
   margin: 10px;
+  -webkit-animation: showImg 1s ease-in-out both;
+          animation: showImg 1s ease-in-out both;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
