@@ -862,6 +862,9 @@ footer .footer-flex a:hover {
 
 .mobilehero img {
   margin-top: 100px;
+  max-width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 .mobilehero h1 {
