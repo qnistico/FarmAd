@@ -684,6 +684,27 @@ footer {
   .mobile-img-hide {
     display: none;
   }
+  .gallery-nav {
+    flex-flow: column;
+    a {
+      text-align: center;
+      font-size: 26px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 0.1px;
+        background-color: #d1d1d1;
+        bottom: 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -700,4 +721,9 @@ footer {
   }
 }
 @media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 360px) {
+  .nav-flex a, .footer-flex a { font-size: 14px !important; margin: 0 10px !important;}
 }

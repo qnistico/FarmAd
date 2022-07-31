@@ -936,6 +936,30 @@ footer .footer-flex a:hover {
   .mobile-img-hide {
     display: none;
   }
+  .gallery-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .gallery-nav a {
+    text-align: center;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .gallery-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 0.1px;
+    background-color: #d1d1d1;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -945,6 +969,13 @@ footer .footer-flex a:hover {
   }
   .details-stats .stats-flex ul li {
     min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav-flex a, .footer-flex a {
+    font-size: 14px !important;
+    margin: 0 10px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
