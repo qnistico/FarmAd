@@ -240,15 +240,8 @@ h2 {
             font-weight: 500;
             list-style-type: decimal;
             position: relative;
-            &::before {
-              content: "";
-              position: absolute;
-              left: -15px;
-              top: 0;
-              width: 1.5px;
-              height: 100%;
-              background-color: #b9314f;
-            }
+            border-left: 2px solid #b9314f;
+            padding-left: 14px;
 
             .prefix {
               color: #264653;
