@@ -56,14 +56,14 @@ h2 {
       border-radius: 10px;
     }
     .farm-advertisement-text {
-    width: 50%;
-    h1 {
-      font-size: clamp(36px, 4vw, 60px);
-      color: #0f2d39;
-    }
-    p {
-      font-size: clamp(28px, 3.2vw, 36px);
-    }
+      width: 50%;
+      h1 {
+        font-size: clamp(36px, 4vw, 60px);
+        color: #0f2d39;
+      }
+      p {
+        font-size: clamp(28px, 3.2vw, 36px);
+      }
     }
   }
 }
@@ -293,8 +293,21 @@ h2 {
   }
 }
 
-.mt20 { margin-top: 10px !important;}
-.bold { font-weight: 600;}
+.star {
+  color: #b9314f;
+  font-size: 40px;
+  position: relative;
+  top: 15px;
+}
+.font14 {
+  font-size: 16px;
+}
+.mt20 {
+  margin-top: 10px !important;
+}
+.bold {
+  font-weight: 600;
+}
 .pond {
   margin-top: 90px;
   .pondflex {
@@ -704,7 +717,7 @@ footer {
       margin-bottom: 20px;
       position: relative;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         left: 0;
@@ -730,9 +743,12 @@ footer {
   }
 }
 @media screen and (max-width: 420px) {
-
 }
 
 @media screen and (max-width: 360px) {
-  .nav-flex a, .footer-flex a { font-size: 14px !important; margin: 0 10px !important;}
+  .nav-flex a,
+  .footer-flex a {
+    font-size: 14px !important;
+    margin: 0 10px !important;
+  }
 }

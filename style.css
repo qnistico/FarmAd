@@ -390,6 +390,17 @@ h2 {
   margin-bottom: 2px;
 }
 
+.star {
+  color: #b9314f;
+  font-size: 40px;
+  position: relative;
+  top: 15px;
+}
+
+.font14 {
+  font-size: 16px;
+}
+
 .mt20 {
   margin-top: 10px !important;
 }
@@ -973,7 +984,7 @@ footer .footer-flex a:hover {
     position: relative;
   }
   .gallery-nav a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     left: 0;
@@ -994,7 +1005,8 @@ footer .footer-flex a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .nav-flex a, .footer-flex a {
+  .nav-flex a,
+  .footer-flex a {
     font-size: 14px !important;
     margin: 0 10px !important;
   }
